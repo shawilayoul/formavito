@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const ResableButton = () => {
-  return <button/>
-}
+const ReusableButton = ({ children, style, onClick }) => {
+  return (
+    <button style={style} onClick={onClick}>
+       {children}
+    </button>
+  );
+};
 
-export default ResableButton
+export default ReusableButton;

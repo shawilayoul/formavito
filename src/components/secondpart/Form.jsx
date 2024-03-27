@@ -20,6 +20,9 @@ const Form = () => {
     console.log(prix);
     console.log(titre);
     console.log(text)
+    data.prix= "";
+    data.titre="";
+    data.text ="";
   }
   return (
     <div>

@@ -1,5 +1,6 @@
 import React from "react";
-import './secondPart.css'
+import './secondPart.css';
+import ReusableButton from "./ResableButton";
 
 const PlusDeDetail = () => {
   return (
@@ -7,17 +8,18 @@ const PlusDeDetail = () => {
       <h3>Plus de détails</h3>
       <p>Ajouter des détails supplémentaires</p>
       <div>
-        <button>Jantes aluinium</button>
-        <button>Aribags</button>
-        <button>Climtisation</button>
-        <button>System de navi</button>
-        <button>Toit ouvrant</button>
-        <button>Jantes aluinium</button>
-        <button>Jantes aluinium</button>
-        <button>Jantes aluinium</button>
-        <button>Jantes aluinium</button>
-        <button>Jantes aluinium</button>
-        <button>Jantes aluinium</button>
+        <ReusableButton style={{ backgroundColor: "green", color: "white" }}>Jantes aluinium</ReusableButton>
+        <ReusableButton>Aribags</ReusableButton>
+        <ReusableButton>Climtisation</ReusableButton>
+        <ReusableButton>System de navi</ReusableButton>
+        <ReusableButton>Toit ouvrant</ReusableButton>
+        <ReusableButton style={{ backgroundColor: "blue", color: "white" }}>ABS</ReusableButton>
+        <ReusableButton>ESP</ReusableButton>
+        <ReusableButton>Vite elecron</ReusableButton>
+        <ReusableButton>Caméra</ReusableButton>
+        <ReusableButton style={{ backgroundColor: "red", color: "white" }}>Radar de recul</ReusableButton>
+        <ReusableButton>Régulateur</ReusableButton>
+        <ReusableButton>Verrouillage</ReusableButton>
       </div>
     </div>
   );
