@@ -2,8 +2,8 @@ import React from "react";
 
 const Etat = () => {
   return (
-    <div>
-      <h3>Etat</h3>
+    <div className="bg-green-200">
+      <h3 className="bg-red-500">Etat</h3>
       <div>
         <button>Excellent</button>
         <button>Trés bon</button>
