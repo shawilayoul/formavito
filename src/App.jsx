@@ -1,15 +1,8 @@
-import { useState } from "react";
-import Critere from "./components/firstpart/Critere";
-import AnneeModele from "./components/firstpart/AnneeModele";
-import Form from "./components/Form";
-import FirstPart from "./components/firstpart/FirstPart";
+import {router} from './components/Router'
+import { RouterProvider } from "react-router-dom";
 function App() {
   return (
-    <div>
-      <FirstPart/>
-      {/*<Critere/>*/}
-      <Form/>
-    </div>
+    <RouterProvider router={router}></RouterProvider>
   );
 }
 

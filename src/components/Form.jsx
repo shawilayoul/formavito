@@ -2,6 +2,10 @@ import React from "react";
 import CarCriteria from "./CarCriteria";
 import { BsFillFuelPumpDieselFill } from "react-icons/bs";
 import { TbManualGearbox } from "react-icons/tb";
+import { MdRealEstateAgent } from "react-icons/md";
+import { FaFlag ,FaDoorOpen} from "react-icons/fa";
+
+import FirstPart from "./firstpart/FirstPart";
 
 const Form = () => {
   const detailsCriterias = {
@@ -16,12 +20,12 @@ const Form = () => {
       labels: ["Automatique", "Mannuelle"],
     },
     State: {
-      classIcon: <TbManualGearbox />,
+      classIcon: <MdRealEstateAgent />,
       heading: "Etat",
       labels: ["Excellent", "Trés bon", "Bon", "Endommagé", "Pour pièces"],
     },
     origin: {
-      classIcon: <TbManualGearbox />,
+      classIcon: <FaFlag />,
       heading: "Origine",
       labels: [
         "Dédouanéee",
@@ -31,7 +35,7 @@ const Form = () => {
       ],
     },
     NumberOfdoors: {
-      classIcon: <TbManualGearbox />,
+      classIcon: <FaDoorOpen />,
       heading: "Numbre de portes",
       labels: [1, 2],
     },
@@ -43,6 +47,7 @@ const Form = () => {
   };
   return (
     <div>
+      <FirstPart />
       <CarCriteria {...detailsCriterias.fuel} />
       <CarCriteria {...detailsCriterias.gearBox} />
       <CarCriteria {...detailsCriterias.State} />
