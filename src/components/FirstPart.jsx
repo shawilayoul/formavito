@@ -1,7 +1,7 @@
 import React from "react";
 import AnneeModele from "./AnneeModele";
 import Kilométrage from "./Kilométrage";
-import PuissanceFscale from "./PuissanceFscale";
+import PuissanceFiscale from "./PuissanceFiscale";
 import Marque from "./Marque";
 
 const FirstPart = () => {
@@ -13,7 +13,7 @@ const FirstPart = () => {
       </div>
       <div>
         <Kilométrage />
-        <PuissanceFscale />
+        <PuissanceFiscale />
       </div>
     </div>
   );

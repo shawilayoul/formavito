@@ -1,8 +1,7 @@
 import { useState } from "react";
-import Critere from "./components/firstpart/Critere";
-import AnneeModele from "./components/firstpart/AnneeModele";
+import AnneeModele from "./components/AnneeModele";
 import Form from "./components/Form";
-import FirstPart from "./components/firstpart/FirstPart";
+import FirstPart from "./components/FirstPart";
 function App() {
   return (
     <div>
