@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import SecondPart from './components/secondpart/SecondPart'
-import Critere from './components/firstpart/Critere'
-import AnneeModele from './components/firstpart/AnneeModele'
+import { useState } from "react";
+import Critere from "./components/firstpart/Critere";
+import AnneeModele from "./components/firstpart/AnneeModele";
+import Form from "./components/Form";
 function App() {
   return (
     <div>
-     {/*<Critere/>
-      <SecondPart/> */}
-      <AnneeModele/>
+      <AnneeModele />
+      {/*<Critere/>*/}
+      <Form/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

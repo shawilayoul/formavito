@@ -1,7 +1,7 @@
 import React from "react";
 import "./annééModel.css";
 import { useState } from "react";
-import ReusableButton from "../secondpart/ResableButton";
+import ReusableButton from "../Button";
 const AnneeModele = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [years, setYears] = useState("Sélectionner");
@@ -45,7 +45,7 @@ const AnneeModele = () => {
               {yearsList.map((year, index) => {
                 return (
                   <div className="year-items">
-                    <button key={index} onClick={() => setYears(year)}>
+                    <button  style={{padding:"8px", marginBottom:"5px"}}key={index} onClick={() => setYears(year)}>
                       {year}
                     </button>
                   </div>
