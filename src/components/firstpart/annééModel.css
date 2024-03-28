@@ -1,5 +1,6 @@
 .modeleContainer{
     position: relative;
+    width: 100%;
 }
 .annee-select select{
     padding: 0.5rem 1rem;
@@ -10,9 +11,8 @@
     background-color:lightgray;
     padding: 15px;
     border-radius: 12px;
-    width: 35%;
     position: absolute;
-    right: 0;
+    left: 50rem;
     top: 0;
 }
 .mode-head{
