@@ -1,27 +1,27 @@
 import React from "react";
 import "./annééModel.css";
 import { useState } from "react";
-const AnneeModele = () => {
+const PuissanceFscale = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [years, setYears] = useState("Sélectionner");
 
   const yearsList = [
-    "2024",
-    "2023",
-    "2022",
-    "2021",
-    "2020",
-    "2019",
-    "2018",
-    "2017",
-    "2016",
-    "2015",
-    "2014",
-    "1980 ou plus ancien",
+    "4 Cv",
+    "5 Cv",
+    "6 Cv",
+    "7 Cv",
+    "8 Cv",
+    "9 CV",
+    "10 CV",
+    "11 Cv",
+    "12 Cv",
+    "39 Cv",
+    "41 Cv",
+    "Plus de 41 Cv",
   ];
   return (
     <div className="modeleContainer">
-      <h3>Année-Modéle</h3>
+      <h3>Puissance Fscale</h3>
       <div className="annee-select">
         <select onClick={() => setIsOpen(!isOpen)}>
           <option value="#">{years}</option>
@@ -31,7 +31,7 @@ const AnneeModele = () => {
       {isOpen && (
         <div className="annéeModel">
           <div className="mode-head">
-            <h3>Annéee-Modéle</h3>
+            <h3>Puissance Fscale</h3>
             <div className="close-btn" onClick={() => setIsOpen(!isOpen)}>
               X
             </div>
@@ -44,7 +44,11 @@ const AnneeModele = () => {
               {yearsList.map((year, index) => {
                 return (
                   <div className="year-items">
-                    <button  style={{padding:"8px", marginBottom:"5px"}}key={index} onClick={() => setYears(year)}>
+                    <button
+                      style={{ padding: "8px", marginBottom: "5px" }}
+                      key={index}
+                      onClick={() => setYears(year)}
+                    >
                       {year}
                     </button>
                   </div>
@@ -59,4 +63,4 @@ const AnneeModele = () => {
   );
 };
 
-export default AnneeModele;
+export default PuissanceFscale;
