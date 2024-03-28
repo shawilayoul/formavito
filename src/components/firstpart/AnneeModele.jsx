@@ -1,15 +1,31 @@
 import React from "react";
 import "./annééModel.css";
 import { useState } from "react";
-
+import ReusableButton from "../secondpart/ResableButton";
 const AnneeModele = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [years, setYears] = useState("Sélectionner");
+
+  const yearsList = [
+    "2024",
+    "2023",
+    "2022",
+    "2021",
+    "2020",
+    "2019",
+    "2018",
+    "2017",
+    "2016",
+    "2015",
+    "2014",
+    "1980 ou plus ancien",
+  ];
   return (
     <div className="modeleContainer">
       <h3>Année-Modéle</h3>
       <div className="annee-select">
         <select onClick={() => setIsOpen(!isOpen)}>
-          <option value="#">Sélectionner</option>
+          <option value="#">{years}</option>
         </select>
       </div>
       {/* the model start*/}
@@ -17,63 +33,25 @@ const AnneeModele = () => {
         <div className="annéeModel">
           <div className="mode-head">
             <h3>Annéee-Modéle</h3>
-            <div className="close-btn" onClick={()=> setIsOpen(!isOpen)}>X</div>
+            <div className="close-btn" onClick={() => setIsOpen(!isOpen)}>
+              X
+            </div>
           </div>
           <div className="search-bar">
             <input placeholder="Rechercher" />
           </div>
           <div className="years">
-            <div>
-              <span>2024</span>
-            </div>
-            <div>
-              <span>2023</span>
-            </div>
-            <div>
-              <span>2022</span>
-            </div>
-            <div>
-              <span>2021</span>
-            </div>
-            <div>
-              <span>2020</span>
-            </div>
-            <div>
-              <span>2019</span>
-            </div>
-            <div>
-              <span>2018</span>
-            </div>
-            <div>
-              <span>2017</span>
-            </div>
-            <div>
-              <span>2016</span>
-            </div>
-            <div>
-              <span>2015</span>
-            </div>
-            <div>
-              <span>2014</span>
-            </div>
-            <div>
-              <span>2013</span>
-            </div>
-            <div>
-              <span>2012</span>
-            </div>
-            <div>
-              <span>2011</span>
-            </div>
-            <div>
-              <span>2010</span>
-            </div>
-            <div>
-              <span>2009</span>
-            </div>
-            <div>
-              <span>1980 ou plus ancien</span>
-            </div>
+            <ul>
+              {yearsList.map((year, index) => {
+                return (
+                  <div className="year-items">
+                    <button key={index} onClick={() => setYears(year)}>
+                      {year}
+                    </button>
+                  </div>
+                );
+              })}
+            </ul>
           </div>
         </div>
       )}
