@@ -1,0 +1,40 @@
+.modeleContainer{
+    position: relative;
+}
+.annee-select select{
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.annéeModel{
+    background-color:lightgray;
+    padding: 15px;
+    border-radius: 12px;
+    width: 35%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.mode-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.close-btn{
+    cursor: pointer;
+}
+.search-bar input{
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+.years{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+}
+.years div:hover{
+  color: blue;
+  cursor: pointer;
+}
